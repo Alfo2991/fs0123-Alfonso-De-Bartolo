@@ -1,0 +1,40 @@
+/*
+posso modificare la dimensione assoluta di utti i testi del boy
+body{
+    font- size:20px -> dimensionamento assoluto
+
+}
+*/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap);
+@font-face {
+    font-family: FontPersonale;
+    src: url(../fonts/flyeaglesfly.otf) format(opentype), /*Browser recenti*/;
+    src: url(../fonts/flyeaglesfly.ttf) format(truetype), /*Browser Recenti*/;
+    src: url(../fonts/flyeaglesfly.txt) format(texttype), /*Browser recenti*/;
+}
+
+:root{
+    font-size: 25px;
+}
+
+#t1{
+    font-size: 1rem;
+    color: #fc3444;
+    font-family: FontPersonale;
+}
+#t2{
+    font-size: 16pex;
+    color: rgb(red, green, blue);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+#parent{
+    font-size: 50px;
+}
+
+#t3{
+    font-size: 1em;
+    font-weight: bold;
+    font-size: italic;
+}
