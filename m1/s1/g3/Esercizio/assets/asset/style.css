@@ -1,0 +1,44 @@
+
+
+.Thanksgiving{
+    color: rgb(5, 132, 136);
+    text-align: center;
+}
+.Fabulous{
+    color: rgb(5, 132, 136);
+    text-align: center;
+    font-weight: 600;
+}
+
+figcaption {
+    padding: 1px;
+    text-align: center;
+    color: rgb(180, 177, 177);
+    font-size: smaller;
+  }
+
+.focaccia.png{
+    display: block;
+    align-items: center;
+    line-height: 10px;
+    padding-left: 100px;
+
+}
+
+#orange{
+    color: orange;
+    font-weight: 600;
+}
+
+#Ricetta{
+    font-weight: 600;
+}
+
+#ingredienti{
+    floa: 60;
+}
+
+li{
+    line-height: 30px;
+    font-size: 10;
+}
