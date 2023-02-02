@@ -1,0 +1,79 @@
+/*stili generali*/
+
+a, a:visited, a:active{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/*stili generali*/
+section > span{
+    text-decoration:line-through
+}
+
+section + small{
+    font-weight: bold;
+}
+section ~ small{/*Tutti gli small dopo una section*/
+    color: red;
+}
+
+/*esempio menu mobile pure css*/
+
+#toggle{
+    display: none;
+}
+
+#menu{
+    background-color: bisque;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+#toggle:checked + #menu{
+    height: 70px;
+}
+
+/*effetti hover*/
+
+#menu li:hover{
+    background-color:white
+}
+
+/*TABELLA*/
+
+table{
+    width: 100%;
+}
+
+table td{
+    border: 1px solid #000;
+} 
+
+table tr:nth-of-type(odd):not(.bianca){
+    background-color: grey;
+}
+
+table tr:first-child td:first-child{
+    background-color:black;
+    color: white;
+}
+
+/*pseudo-elementi*/
+
+table tr:first-child td::after{
+    content: "+";
+}
+table tr:first-child td::before{
+    content: "+";
+    animation-name: ruota;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+}
+@keyframes ruota{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}

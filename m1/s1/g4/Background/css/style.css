@@ -1,0 +1,31 @@
+img{
+    max-width: 100%;
+}
+
+/*css background*/
+
+.quadrato{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+#q1{
+    background-image: url(../img/imaginehtml5.png);
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#q2{
+    background-image: url(../img/imaginehtml5.png), url(../img/imaginehtml5.png);
+    background-size: 100px auto;
+    background-repeat: no-repeat, repeat-y;
+    background-position: right top, left bottom;
+}
+
+#q3{
+    background-image: url(https://api.lorem.space/image/face?w=150&h=150&hash=9D9539E7);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

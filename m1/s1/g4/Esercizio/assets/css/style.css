@@ -1,0 +1,178 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/sfondo.png);
+    background-position: center;
+}
+h1{
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    font-weight: bold; 
+}
+h2{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+a {
+    color: #00a1c8;
+}
+p {
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+img {
+    max-width: 100%;
+}
+header {
+    margin-bottom: 30px;
+}
+header, footer {
+    background-color: #00819f;
+   }
+code {
+    background-color: #e1e1e2;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+mark {
+    color: #aa2072;
+    background-color: transparent;
+}
+article, form {
+    background-color: #e6e2de;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+.container {
+    width: 400px;
+    margin: 20px auto
+}
+.content {
+    box-shadow: ;
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+/* HEADER */
+#logo {
+    display: block;
+    width: 230px;
+    margin: 0 auto 20px auto;
+}
+.navbar {
+    padding: 30px 50px;
+    color: #fff;
+}
+.navbar .menu a {
+    color: #fff;
+    text-decoration: none;
+}
+.navbar .menu a::before {
+    content:'=>';
+}
+.navbar .menu a::after {
+    content:'<=';
+}
+.navbar span {
+    display: block;
+    margin: 0 auto 30px auto;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar .menu {
+    list-style-type:none;
+    text-align: center;
+}
+.navbar .menu li {
+    margin-bottom: 10px;
+}
+/* MAIN */
+main .fonte{
+    color: #a1abad;
+}
+main article{
+    background-color: transparent;
+}
+main ul, main ol{
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+main ul li p:not(:last-child){
+
+}
+main ol li {
+
+}
+iframe {
+    width: 100%;
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+  th {
+    background-color: #3867d8;
+    color: white;
+  }  
+  tr:not(:last-child){
+    border-bottom: 1px solid #e5e4e6;
+  }
+  tr:nth-child(even){background-color: #f2f2f2}
+  tr:nth-child(odd){background-color: #fff}
+
+
+table {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3366cc;
+}
+table caption {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* FORM */
+form p{
+    text-align: justify;
+}
+input[type="email"]{
+    border-bottom: 1px dashed #000;
+
+}
+input[type="submit"]{
+    color: #fff;
+    background-color: #3966c6;
+    font-weight: bold;
+}
+/* ELEMENTI NELL' ASIDE */
+p.date{
+    text-align: end;
+    margin-bottom: 0;
+}
+/* FOOTER */
+footer {
+    padding: 20px;
+    color: #fff;
+}
+
+footer a {
+    color: #fc0cea;
+}
+footer address{
+    display: inline;
+}
