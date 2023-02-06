@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var numero = 5;
+        var nomeUtente = 'Mario';
+
+        console.log(numero, nomeUtente);
+
+        numero = 8
+        console.log(numero)
+
+
+
+        /* 
+        tipi di dato
+
+        string=> '' oppure""
+        number=> 5
+        boolean=> true oppure false (due possibili uscite - Vero/non Vero)
+        array=> se vediamo le parentesi quadre []
+        object=> se vediamo le parentesi graffe{}   
+
+        */
+
+        var a = 2;
+        var b = 3;
+        var c = a + b
+
+        console.log(c, a + b)
+
+        /*
+
+        operatori aritmetici
+        + => somma
+        / => divisione
+        * => moltiplicazione
+        - => sottrazione
+
+        */
+
+        var nome = 'Mario';
+        var saluto = ' Ciao';
+
+        console.log(saluto + ' ' + nome)
+
+        /*
+        conversione tipi di dato
+        parkour
+        */
+
+        var num = 10;
+        var strNum = '10';
+        console.log(num + strNum) //il numero si converte in stringa, avviene un concatenamento
+        console.log(num * strNum) // la stringa viene convertita in numero, avremo una moltiplicazione 
+        console.log(num * '10a') // restituisce NAn (not a number) perchè la stringa contiene una lettera 
+
+        console.log(typeof num)
+
+    </script>
+</body>
+
+</html>
