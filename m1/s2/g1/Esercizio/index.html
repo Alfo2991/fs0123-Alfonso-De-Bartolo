@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            var btn1 = document.getElementById('btn_1').textContent;
+            var btn2 = document.getElementById('btn_2').textContent;
+            var btn3 = document.getElementById('btn_3').textContent;
+            var btn4 = document.getElementById("btn_4").textContent;
+
+            console.log(btn1 + ' - ' + btn2 + ' - ' + btn3 + ' - ' + btn4);
+            console.log(`${btn1} - ${btn2} - ${btn3} - ${btn4}`);
+            console.log(`Io sono il ${btn1}`);
+
+            var loginRes = document.getElementById("loginRes");
+            var ageBtn = document.querySelector("input[type=button]");
+
+                ageBtn.addEventListener('click',() => {
+                    console.log('Vela' + 'motore' + 'macchina' + 'moto');
+                    var age = document.getElementById('age').value;
+                    console.log(age);
+                    if(age >=18 && age <=110) {
+                        console.log('ok');
+                        loginRes.innerHTML = '<h1 class="ok">Ok, sei maggiorenne</h1>';
+                        alert('Sei entrato');
+                    }else if(age > 110){
+                        loginRes.innerHTML = '<h1 class="notok">Sei antico, vai a fare le mummia altrove</h1>';
+                    }else{
+                        loginRes.innerHTML = '<h1 class="notok">Tu non puoi entrare</h1>';
+                    }
+                })
+        })        
+    </script>
+</head>
+<body>
+
+<div class="buttons">
+    <a id="btn_1" class="btn" href="">bottone_1</a>
+    <a id="btn_2" class="btn" href="">bottone_2</a>
+    <a id="btn_3" class="btn" href="">bottone_3</a>
+    <a id="btn_4" class="btn" href="">bottone_4</a>
+</div>
+
+<form>
+    <input id="age" type="number" required>
+    <input type="button" class="btn" value="Invia">
+</form>
+<div id="loginRes"></div>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/naming.js"></script>
+</body>
+</html>
