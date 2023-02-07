@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //operatori di assegnazione
+        let a = 2;
+        let b = 4;
+
+        console.log(b)//4
+        b = 6;
+        console.log(b)//6
+
+        a += 2;//2 + 2 sommare e concatenare
+        console.log(a)
+        a -= 2;//4 - 2 =2
+        console.log(a)//2
+
+        let c = '<div> Ciao'
+        console.log(c)
+
+        c += '</div>';//aggiungo la chiusura del div
+        // c = c + '</div>';
+
+        console.log(c); //<div>Ciao</div>
+
+        //operatori logici e di comparazione
+
+
+        let anni = 30;//fornito da un ipotetico prompt o utente
+
+        console.log(anni < 18); //false
+        console.log(anni > 18); //true
+        console.log(18 > 18); //false, infatti 18 non è sueriore a 18 
+        console.log(18 >= 18); //true, se è uguale o superiore
+        console.log(18 <= 18); //true, se è uguale o inferiore
+        console.log(18 == 18); //true, se è uguale a 18 (== indica IDENTICO)
+        console.log(18 != 18); //false, perchè è uguale (!= indica DIVERSO)
+
+        console.log(anni == '30');//true => cinversione e comparazione, viene valutato il dato e non il tipo di dato
+        console.log(anni === '30');//false comparazione, vengono comparati valore e tipo di dato, mi controlla anche il tipo di dato
+
+        /*
+            altra possibilità: !==
+            devono essere differenti il tipo o il valore
+        */
+
+        console.log(anni >= 18 && anni <= 110)
+        console.log(anni >= 18 || anni <= 110); // || operatore "or" mi da true se almeno una delle due è vera
+
+        console.log(!(anni >= 18 && anni <= 110));//inverto il valore booleano
+
+        if (anni = 20)
+            console.log('ok')
+
+            //operatore ternario 
+
+            let controllo = anni >= 18 ? 'Sei maggiorenne' : 'Sei minorenne'
+            console.log(controllo);
+
+
+    </script>
+</body>
+
+</html>
