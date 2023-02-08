@@ -1,0 +1,89 @@
++<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let arrOld = new Array();//non si usa
+        let arr = [];
+
+        let numeri = [1,2,3,4,5,6,50]
+        document.write(numeri)//viene convertito in stringa, formato csv
+
+        let dati = [
+            'stringa',
+            0,
+            true,
+            {},
+            []
+        ]
+
+        //lettura dei valori in un array
+        let pizze = ['Margherita','Diavola','4 Formaggi'];
+
+        console.log(pizze)
+
+        console.log( pizze[0] )
+
+        let pizza2 = pizze[1];
+        console.log(pizza2);
+
+        //scrittura
+
+        pizze[2] = 'Capricciosa';
+        console.log(pizze)
+        
+        //ATTENZIONE: EVITIAMO I BUCHI
+        
+        pizze[4] = 'Marinara';//sconsigliato per aggiungere
+        console.log(pizze)
+        
+        //aggiungere alla fine dell'array senza creare buchi
+        pizze.push('Parigina');
+        console.log(pizze)
+
+        //proprietà length
+
+        console.log( pizze.length );
+
+        console.log( pizze[pizze.length - 1] ); //Parigina
+
+        console.log('ciao'.length)//è comunque sbagliato dire che la sringa sono array di caratteri
+        /**
+         * riordinare
+         * 
+         * attenzione: sort non è adatto per riordinare i numeri
+         * riordina i numeri in senso alfabetico
+         * */
+        let studenti = ['Mauro','Vittorio','Rebecca']
+        console.log(studenti)
+        studenti.sort()//riordina in ordine alfabetico
+        console.log(studenti)
+        studenti.reverse()//inverte l'ordine attuale
+        console.log(studenti)
+        
+        /*riordinare i numeri*/
+        let numerati = [1,100,20];
+        numerati.sort(function(a,b){
+            return a - b;
+        })
+        console.log(numerati)
+        
+        
+
+
+
+    
+     
+
+
+
+    </script>    
+</body>
+</html>

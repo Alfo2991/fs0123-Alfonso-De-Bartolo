@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let objOld = new Object(); //sconsigliato
+        let obj = {}; //si usa questo
+
+        let pizza = {
+            gusto:'Margherita',
+            prezzo:5,
+            mostrPprezzo: function(){
+                console.log(`La pizza ${this.gusto} costa ${this.prezzo} €`)
+            } 
+        
+        }
+
+        console.table(pizza)
+        document.write(pizza)
+        document.write(pizza.gusto)
+
+        // lettura di una proprietà
+
+        console.log( pizza.gusto )
+
+        console.log( pizza.prezzo )
+        //scrittura
+
+        console.log( pizza.gusto )
+
+        pizza.gusto = 'Diavola'
+
+        //utilizzo dei metodi
+
+        pizza.mostraPrezzo()
+
+
+    </script>
+</body>
+</html>
