@@ -175,7 +175,7 @@ console.log(es9);
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
  
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA 
 function vallo(val){
   if (val < 10) {
       return "Meno di 10";
@@ -187,10 +187,9 @@ function vallo(val){
   }
   let es10 = vallo(16);
   console.log(es10);
-
+*/
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
-*/
 
 const me = {
   name: 'John',
@@ -198,32 +197,62 @@ const me = {
   skills: ['javascript', 'html', 'css'],
 }
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA 
 const me = {
   name: 'John',
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
   city: `toronto`,
 }
+*/
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 13
+
+/* SCRIVI QUI LA TUA RISPOSTA 
+
+const me = {
+  name: 'John',
+  lastName: 'Doe',
+  skills: ['javascript', 'html', 'css'],
+}
+
+delete me.lastName
+console.log(me)
+
+ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
+  
+
+  const me = {
+  name: 'John',
+  lastName: 'Doe',
+  skills: ['javascript', 'html', 'css'],
+}
+
+delete me.skills
+console.log(me)
+
 */
+/*
+SCRIVI QUI LA TUA RISPOSTA
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
-/* ESERCIZIO 14
+/*ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
+
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let newArray = Array.from({ length: 10 }, (value, index) => index);
+
+
+console.log(my_array)   NON RIUSCITO
+*/
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
