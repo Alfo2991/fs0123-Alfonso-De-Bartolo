@@ -1,24 +1,20 @@
-const output = document.querySelector(".output");
-const risultato = document.querySelector(".risultato");
-const keys = document.querySelectorAll(".button")
+let risultato1 = document.getElementById("mostratesto");
 
-keys.forEach(key{
-    key.addEventListener(calcola)
-});
+function scrivivalore(numberOrSymbol){
 
-function calcola() {
-    let buttontext = this.innerText;
-    if (buttontext === "C") {
-        output.innerText = "";
-        risultato.innerText = "0"
-    }
+    risultato1.value += numberOrSymbol;
 
-    if (buttontext === "=") {
-        LO VEDIAMO DOPO
-    }
-    else {
-        output.textContent += buttontext;
-        return;
-    }
 }
 
+function cancella(){
+
+    risultato1.value = risultato1.value.slice(0,-1);
+
+}
+
+
+function risultato(){
+ 
+    risultato1.value = eval(risultato1.value)
+
+}

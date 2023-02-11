@@ -2,39 +2,56 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcolatrice</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link href="/CSS/style.css" rel="stylesheet">
+
 
 </head>
+
 <body>
-    <div class="calcolatrice">
-        <div class="display"> </div>
-        <div class="output"></div>
-        <div class="risultato"></div>
-    
-        <div class="input">
-            <button>=</button>        
-            <button>C</button>
-            <button>0</button>
-            <button>.</button>
-            <button>+</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>-</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>*</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>/</button>
+    <div id="calcolatrice">
+        <div>
+            <div id="display">
+                <input type="text" id="mostratesto">
+            </input>
+            </div>
+
+            
+
+        </div>
+        <div class="tasti">
+
+            <div id="numeri">
+                <button type="button" class="button1" value="2" onclick=" scrivivalore(2)">2</button>
+                <button type="button" class="button1" value="3" onclick=" scrivivalore(3)">3</button>
+                <button type="button" class="button1" value="1" onclick=" scrivivalore(1)">1</button>
+                <button type="button" class="button1" value="4" onclick=" scrivivalore(4)">4</button>
+                <button type="button" class="button1" value="5" onclick=" scrivivalore(5)">5</button>
+                <button type="button" class="button1" value="6" onclick=" scrivivalore(6)">6</button>
+                <button type="button" class="button1" value="7" onclick=" scrivivalore(7)">7</button>
+                <button type="button" class="button1" value="8" onclick=" scrivivalore(8)">8</button>
+                <button type="button" class="button1" value="9" onclick=" scrivivalore(9)">9</button>
+                <button type="button" class="button1" value="0" onclick=" scrivivalore(0)">0</button>
+            </div>
+            <div id="operatori">
+                <button type="button" class="button1" value="/" onclick=" scrivivalore('/')">/</button>
+                <button type="button" class="button1" value="+" onclick=" scrivivalore('+')">+</button>
+                <button type="button" class="button1" value="-" onclick=" scrivivalore('-')">-</button>
+                <button type="button" class="button1" value="*" onclick=" scrivivalore('*')">*</button>
+            </div>
+            <div id="tastinulli">
+                <button type="button" class="button2" value="=" onclick=" risultato()">=</button>
+                <button type="button" class="button3" value="C" onclick=" cancella()">C</button>
+            </div>
+
         </div>
     </div>
+
+
     <script src="DS/ds.js"> </script>
 </body>
 
