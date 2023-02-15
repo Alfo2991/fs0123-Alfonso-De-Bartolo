@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+  }
+.selezionato{
+    text-decoration: line-through;
+    
+    background-color: green;
+    
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+  }
+
+
+li{
+    margin: 2em;
+}
+
+button{
+    margin-left: 25em;    
+    
+}
+
+#bottonewtask{
+    margin-left: 2em;
+}
