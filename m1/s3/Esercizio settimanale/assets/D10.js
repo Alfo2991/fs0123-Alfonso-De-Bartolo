@@ -11,28 +11,28 @@ REGOLE
 
 /* ESERCIZIO A
   Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
-*/
-//let sum = 10 + 20
 
-//console.log(sum)
+let sum = 10 + 20
+
+console.log(sum)
 
 /* ESERCIZIO B
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
-*/
-//let random = Math.floor(Math.random() * 20) + 1;
-//console.log(random);
+
+let random = Math.floor(Math.random() * 20) + 1;
+console.log(random);
 
 /* ESERCIZIO C
   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
-*/ 
-//let me = {
-//  name: 'Alfonso',
-//  surname: 'De Bartolo',
-//  age: 31
-// }
+
+let me = {
+ name: 'Alfonso',
+  surname: 'De Bartolo',
+  age: 31
+}
 
 
-//
+
 /* ESERCIZIO D
   Crea del codice per rimuovere programmaticamente la proprietà "age" dall'oggetto precedentemente creato.
 
@@ -78,51 +78,91 @@ function dice() {
   let numero = Math.floor(Math.random() * 6) + 1;
   return numero;
 }
-
+console.log(dice())
 
 
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 
 function whoIsBigger(a, b) {
-    if (a > b && b > a) {
-     return a;
-    } else {
-      return b;
-    }
+  if (a > b && b > a) {
+    return a;
+  } else {
+    return b;
   }
-  console.log(whoIsBigger('8','17'))
-  
+}
+console.log(whoIsBigger('8', '17'))
+
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
 
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
-*/
-function splitMe(aiuto) {
-  return aiuto.split(" ");
- 
+
+
+function splitMe(stringa) {
+
+  return stringa.split(" ");
 
 }
+console.log(splitMe('ERA LO SPAZIO TRA LE VIRGOLETTE!!'));
 
 
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
-*/
 
+function deleteOne(stringa, boolean) {
+  if (boolean == true) {
+      return stringa.slice(1);
+  } else {
+      return stringa.slice(0, -1);
+  }
+}
+
+console.log(deleteOne("eserciziodavverofacile", true));
+console.log(deleteOne("-.-complimenti!", false));
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
 
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
-*/
+
+
+function onlyLetters(stringa) {
+  let soloLettere = "";
+  for (let i = 0; i < stringa.length; i++) {
+      if (isNaN(stringa[i])) {
+          soloLettere += stringa[i];
+      }
+  }
+  return soloLettere;
+}
+
+
 
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
-*/
 
+function isThisAnEmail(email) {
+  if (email.includes("@") && email.includes(".")) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isThisAnEmail("alfo@gmail.com"));
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
-*/
+
+
+function whatDayIsIt() {
+  oggi = new Date();
+  giorno = oggi.getDay();
+  giorni = ["Domenica", "Lunedì", "Martedì ", "Mercoledì ", "Giovedì ", "Venerdì ", "Sabato "];
+  return giorni[giorno];
+}
+
+
+
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
@@ -135,15 +175,42 @@ function splitMe(aiuto) {
       sum: 10
       values: [3, 3, 4]
   }
-*/
 
+function dice() {
+  let numero = Math.floor(Math.random() * 6) + 1;
+  return numero;
+}
+
+
+
+
+
+function rollTheDices(numero) {
+  let sum = 0;
+  let values = [];
+  for (let i = 0; i < numero; i++) {
+    let numero = dice();
+    sum += numero;
+    values.push(numero);
+  }
+  return {
+    sum: sum;
+    values: values;
+  }
+}
+console.log(rollTheDices(6));
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
 
+
+
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
+
+
+
 
 // Arrays & Oggetti
 
@@ -152,23 +219,59 @@ function splitMe(aiuto) {
 /* ESERCIZIO 11
   Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri; deve ritornare l'oggetto fornito dopo aver eliminato
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
-*/
+
+
+let cancellaProp= {
+    nome: 'mario',
+    cognome: 'rossi',
+    età: '32',
+}
+function deleteProp(cancellaProp, cognome){
+  delete cancellaProp.cognome;
+  return cancellaProp
+}
+
+
 
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
-*/
+ 
+function newestMovie(movies) {
+  let newest = movies[0];
+  for (let i = 0; i < movies.length; i++) {
+    if (movies[i].Year > newest.Year) {
+      newest = movies[i];
+    }
+  }
+  return newest;
+}
 
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
-*/
+
+function countMovies(movies) {
+  return movies.length;
+}
+
 
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
-*/
+
+
+function onlyTheYears(movies) {
+  let years = [];
+  for (let i = 0; i < movies.length; i++) {
+    years.push(`${movies[i].Year}`);
+  }
+  return years;
+}
+
 
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
+
+
 
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
@@ -203,20 +306,40 @@ function splitMe(aiuto) {
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
-*/
+
+function addRedBackground() {
+  òet links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    links[i].style.backgroundColor = 'red';
+  }
+}
+addRedBackground();
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
-*/
+*
+function addElement() {
+  let newElement = document.createElement("li");
+  let newText = document.createTextNode("new element");
+  newElement.appendChild(newText);
+  let list = document.getElementById("myList");
+  list.appendChild(newElement);
+}
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
-*/
 
+function emptyList() {
+  let list = document.getElementById("myList");
+  list.innerHTML = "";
+}
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
-*/
 
+let tr = document.getElementsByTagName("tr");
+for (let i = 0; i < tr.length; i++) {
+  addClass(tr[i], "test");
+}
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
