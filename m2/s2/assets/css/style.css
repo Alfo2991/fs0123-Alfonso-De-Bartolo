@@ -1,5 +1,5 @@
 /* IMPOSTAZIONI GENERALI */
-html {font-size: 62.5%;}
+
 body { 
     font-family: Poppins, 'Helvetica Neue', sans-serif;
     font-size: 1.4rem;
@@ -23,9 +23,8 @@ header {
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
     position: sticky;
-    margin-top: 0;
-    z-index: 5;
-}
+    top: 0;
+    }
 header div img {
     margin-bottom: 20px;
 }
