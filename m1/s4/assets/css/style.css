@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  .header {
+    background-color: #3B3B3B;
+    color: #FFFFFF;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .main h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .main p {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+ 
+  .cta {
+    background-color: #63C8F6;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cta h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .cta a {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: #63C8F6;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .cta a:hover {
+    background-color: #63C8F6;
+    color: #FFFFFF;
+  }
+  
+
+  .footer {
+    background-color: #3B3B3B;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+  
+  .button:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 10px #fff;
+  }
+  
+  .button:hover::before {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  
