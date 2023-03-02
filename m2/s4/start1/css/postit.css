@@ -1,0 +1,62 @@
+html,body {
+    height: 100%;
+}
+
+body {
+    background-color: grey;
+    font-family: 'Indie Flower', cursive;
+    
+
+}
+
+#container {
+    display: flex;
+    
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 20px;
+    position: relative;
+    
+}
+
+.postit {
+    width: 150px;
+    height: 120px;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 0 3px 5px   black;
+
+}
+
+
+h1 {
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+   
+}
+
+#yellow1, #yellow2, #yellow3 {
+   
+    background: linear-gradient(3600deg,#58581e,rgb(245, 240, 95));
+    transform: rotate(-5deg);
+}
+
+#green1, #green2, #green3 {
+    
+    background: linear-gradient(180deg,#b7ffb7,rgb(163, 163, 163));
+    transform: rotate(6deg);
+
+}
+
+
+#purple1, #purple2 {
+    
+    background: linear-gradient(180deg,#b260a1,rgb(156, 151, 151));
+    transform: rotate(-10deg);
+}
+#purple1:hover,#purple2:hover {
+    transform: scale(1.5,1.5);
+    z-index: 10;
+    
+}
