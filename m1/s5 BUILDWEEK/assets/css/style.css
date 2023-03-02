@@ -1,0 +1,550 @@
+/* body {
+  border: 5px solid yellow;
+}
+
+.container {
+  border: 1px solid red;
+} */
+
+/* 
+##################
+# GENERAL STYLES #
+##################
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --turquoise: #00ffff;
+  --fuchsia: #d20094;
+  --white: #fff;
+  --black: #000;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: var(--black);
+}
+
+body {
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--white);
+
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.container {
+  /*height: 100%; */
+  /* max-height: 700px; */
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+.container--center {
+  align-items: center;
+}
+
+.header-box {
+  width: 100%;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-img {
+  height: 35px;
+}
+
+.main-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 80px;
+  line-height: 3.8rem;
+}
+
+.title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.title-box-left {
+  align-self: flex-start;
+}
+
+.title-box-mb-sm {
+  margin-bottom: 20px;
+}
+.title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 60px;
+  line-height: 3.8rem;
+  text-align: center;
+}
+
+.title-mb-m {
+  margin-bottom: 20px;
+}
+
+.title-box span {
+  font-weight: 700;
+  display: block;
+}
+
+.subtitle {
+  font-family: 'Outfit', sans-serif;
+  max-width: 700px;
+  font-size: 1.7rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* #target {
+  display: none;
+} */
+
+/* 
+#######################
+# WELCOME PAGE STYLES #
+#######################
+*/
+
+.instruction-box {
+  margin-bottom: 40px;
+}
+
+.instruction-box p:first-child {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  color: #c2128d;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.instruction-box p:nth-child(2) {
+  line-height: 1.2;
+}
+
+.list-box {
+  margin-bottom: 80px;
+}
+
+.list-box ul {
+  margin-left: 20px;
+}
+
+.list-box ul li {
+  list-style: disc;
+  line-height: 25px;
+}
+
+.list-box span {
+  font-weight: 700;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  align-items: center;
+}
+
+.footer-box span {
+  font-size: 0.9rem;
+}
+
+/*CHECKBOX*/
+
+#checkbox {
+  display: none;
+}
+
+label div {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border: 1px solid #fff;
+  text-align: center;
+  /* line-height: 20px; */
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+label i {
+  font-size: 16px;
+  opacity: 0;
+}
+
+label:hover div {
+  background: rgba(255, 255, 255, 0.2);
+
+}
+
+#checkbox:checked+label i {
+  opacity: 1;
+}
+
+#checkbox:checked+label div {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* CTA */
+
+.cta {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 15px 50px;
+  background-color: var(--turquoise);
+  margin-left: 30px;
+}
+
+.cta:hover {
+  box-shadow: 0 0 20px 2px var(--turquoise);
+}
+
+/* 
+#########################
+# BENCHMARK PAGE STYLES #
+#########################
+*/
+
+.answers-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 50px;
+  margin-bottom: 50px;
+}
+
+.question-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 50px;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.answer-btn {
+  font-size: 1.1rem;
+  color: var(--white);
+  width: 400px;
+  border: none;
+  padding: 30px 40px;
+  box-shadow: -1px -3px 5px 2px var(--white);
+
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.answer-btn:hover {
+  box-shadow: -1px -3px 5px 2px linear-gradient(180deg, rgba(210, 0, 148, 1) 0%, rgba(144, 0, 128, 1) 50%);
+  
+  /*background: linear-gradient(180deg, rgba(210, 0, 148, 1) 0%, rgba(144, 0, 128, 1) 30%);*/
+}
+.clicked-answer:focus{
+  background-color: rgb(210, 0, 148);
+}
+.counter-box {
+  display: flex;
+}
+
+.counter-box p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.counter-box span {
+  color: var(--fuchsia);
+}
+
+.next-question-box {
+  align-self: flex-end;
+}
+
+.next-question-btn {
+  background-color: var(--fuchsia);
+  color: var(--white);
+  padding: 15px 50px;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.next-question-btn:hover {
+  box-shadow: 0 0 20px 2px var(--fuchsia);
+}
+
+/* 
+################
+# TIMER STYLES #
+################
+*/
+
+.base-timer {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 10px;
+  stroke: rgba(255, 255, 255, 0.5);
+}
+
+.base-timer__path-remaining {
+  stroke-width: 10px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.time-back-transition {
+  transition: unset;
+}
+
+.text-timer1 {
+  font-size: 10px;
+  position: absolute;
+  left: 50px;
+  top: 40px;
+}
+
+.text-timer {
+  font-size: 10px;
+  position: absolute;
+  left: 46px;
+  bottom: 38px;
+}
+
+.base-timer__path-remaining.green {
+  color: var(--turquoise);
+}
+
+.base-timer__path-remaining.orange {
+  color: var(--white);
+}
+
+.base-timer__path-remaining.red {
+  color: var(--fuchsia);
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+
+/* 
+######################
+# RESULT PAGE STYLES #
+######################
+*/
+
+.central-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+}
+
+.wrong {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 190px;
+}
+
+.right span:nth-child(1),
+.wrong span:nth-child(1) {
+  font-size: 3.4rem;
+  margin-bottom: 5px;
+}
+
+.right span:nth-child(2),
+.wrong span:nth-child(2) {
+  font-size: 3.1rem;
+  margin-bottom: 7px;
+  font-weight: 700;
+}
+
+.right span:nth-child(3),
+.wrong span:nth-child(3) {
+  font-size: 1.25rem;
+}
+
+.circle {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  margin: 0 70px;
+}
+
+/* .circle {
+  border: 50px solid #c2128d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 30px;
+}*/
+
+ .messageDiv span:nth-child(2){
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+ .messageDiv span:first-child{
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #01ffff;
+}
+
+.messageDiv p {
+  line-height: 1.1;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 5px;
+
+}
+
+.rate-box {
+  margin-top: 20px;
+}
+
+.rate-btn {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: 3px solid white;
+  padding: 15px 50px;
+  background-color: transparent;
+  color: white;
+  width: 230px;
+}
+
+/* 
+######################
+# CIRCLE PAGE STYLES #
+######################
+*/
+
+.container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.messageDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  /* font-weight: 400;
+  font-size: 16px; */
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* 
+########################
+# FEEDBACK PAGE STYLES #
+########################
+*/
+
+.stars-container {
+  margin-bottom: 50px;
+}
+
+.star {
+  height: 49px;
+  width: 49px;
+  margin: 5px;
+  opacity: 1;
+  filter: brightness(0%);
+}
+
+.feedbackStars {
+  filter: brightness(100%);
+}
+
+.feedback-input {
+  height: 40px;
+  width: 47rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: transparent;
+
+  border: 0;
+  border-bottom: 2px solid var(--fuchsia);
+  outline: none;
+
+  padding-left: 35px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+/* 
+###############
+# TEST STYLES #
+###############
+*/
+
